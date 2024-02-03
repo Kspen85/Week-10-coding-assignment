@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--link to bootstrap-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"></link>
+</head>
+ <!--create a form using a container-->
+<center><b><h1>Coffee Order</h1></b></center>
+<body class="container" style="width: 50%">
+    <br>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label form="coffee-size">Coffee Size</label>
+                        <input type="data" class="form-control" id="coffee-size" placeholder="Small, Medium, Large">
+                    </div>
+                </div>
+            </div>
+             <!--another row to form-->
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label form="coffee-flavor">Coffee Flavor</label>
+                        <input type="data" class="form-control" id="coffee-flavor" placeholder="Black, Caramel, Mocha, Hazelnut">
+                    </div>
+                </div>
+            </div>
+            <!--another row to form-->
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label form="coffee-temp">Coffee Temperature</label>
+                        <input type="data" class="form-control" id="coffee-temp" placeholder="Hot or Iced">
+                    </div>
+                </div>
+            </div>
+            <!--another row to form-->
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label form="coffee-make">Additives</label>
+                        <input type="data" class="form-control" id="coffee-make" placeholder="Milk, Cream or Sugar">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!--submit button-->
+            <div>
+            <center><button id="add" style="width:15%" class="btn btn-primary form-control">Submit</button></center>
+        </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!--table to list all of information put into the form-->
+    <table id="list" class="table table-striped" style="width:100%">
+        <tr>
+            <th>Size</th>
+            <th>Flavor</th>
+            <th>Temperature</th>
+            <th>Make</th>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <img src="heartcoffee.jpg" class="img-rounded" alt="Cinque Terre" style="width:100%">
+   <script src="coffee.js"></script> <!--links to javascript, jquery and bootstrap-->
+   <script src="node_modules/jquery/dist/jquery.js"></script>
+   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> 
+</body>
+</html>
